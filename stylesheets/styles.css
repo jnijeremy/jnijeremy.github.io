@@ -157,6 +157,10 @@ img {
   max-width:100%;
 }
 
+.hlink {
+  color: black;
+}
+
 header {
   width:270px;
   float:left;
