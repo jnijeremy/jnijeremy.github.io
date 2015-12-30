@@ -15,8 +15,9 @@
   <h2>Who am I</h2>
     <p>I am Jeremy Ni <span lang="zh-Hans">倪泽宇</span></p>
     
-    <p><a style="cursor: pointer;" id="robot-button" data-clicked="0">Don't Press</a></p>
-    <img id = "red-button" src="img/RedButton.png"/>
+    <p id="robot-button" class="wtf">Don't Press the Red Button</p>
+    <a><img id = "red-button" data-clicked="0" src="img/RedButton.png"/></a>
+
   <h2>Router</h2>
     <p>Vancouver · <abbr title="Simon Fraser University">SFU</abbr> · Hangzhou · <abbr title="Zhejiang University">ZJU</abbr></p>
     <p><a href="https://github.com/jnijeremy" target="_blank">GitHub</a>, <a href="https://twitter.com/jnijeremy" target="_blank">Twitter</a>, <a href="https://facebook.com/jnijeremy" target="_blank">Facebook</a>, <a href="https://linkedin.com/in/jnijeremy" target="_blank">LinkedIn</a>, <a href="https://instagram.com/jnijeremy" target="_blank">Instagram</a></p>
@@ -39,14 +40,20 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script>
 $(document).ready(function() {
-  $("#robot-button").click(function() {
+  var robotButton = $("#robot-button");
+
+  $("#red-button").hover(function() {
+    robotButton.toggleClass("wtf");
+  });
+  $("#red-button").click(function() {
     var clicked = $(this).attr("data-clicked");
     if (clicked == 0) {
-      $(this).html("Please do not press this button again.");
+      robotButton.html("Please don't press me again.");
       $(this).attr("data-clicked", 1);
     }
     else {
       $(this).hide();
+      robotButton.hide();
     }
   });
 });
