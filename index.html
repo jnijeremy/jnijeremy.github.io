@@ -1,58 +1,78 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jnijeremy.GitHub.io by jnijeremy</title>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a class="hlink" href="http://jnijeremy.com">Jeremy Ni</a></h1>
+  <title>I am Xhacker</title>
 
-        <p class="view"><a href="blog">Blog</a></p>
+  <meta name="viewport" content="user-scalable=no, width=device-width">
 
-      </header>
-      <section>
-        <h3>About Me</h3>
-        <p>I am Jeremy Ni.  I write code.</p>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>I am Xhacker</h1>
+</header>
+<div role="main">
+  <h2>Who am I</h2>
+    <p>I am LIU Dongyuan <span lang="zh-Hans">柳东原</span>, I create lovely apps on iOS and OS X.</p>
+    <p><a style="cursor: pointer;" id="robot-button" data-clicked="0">Try Again</a>
+  <h2>Router</h2>
+    <p>Vancouver · <abbr title="Simon Fraser University">SFU</abbr> · Hangzhou · <abbr title="Zhejiang University">ZJU</abbr> · Beijing · <abbr title="Beijing National Day School">BNDS</abbr></p>
+    <p><a href="https://github.com/xhacker" target="_blank">GitHub</a>, <a href="https://twitter.com/xhacker" target="_blank">Twitter</a>, <a href="https://dribbble.com/xhacker" target="_blank">Dribbble</a>, liu.dongyuan@gmail.com</p>
+    <p><a href="http://blog.xhacker.im/" target="_blank">Xhacker’s Base</a> · <a href="http://walkendstar.tumblr.com/" target="_blank">Walk End Star</a> · IRIDIUM 57 · <a href="http://moonspica.blogspot.com/" target="_blank">Moon Spica</a> · Daisy Stream</p>
+  <h2>Portfolio</h2>
+  <ul>
+    <li><a href="http://ela.build/oneclock">One Clock</a><sup>WIP</sup>, one menubar app, all your time zones.</li>
+    <li><a href="http://inboardapp.com">Inboard</a>, Mac app for organizing your screenshots and photos.</li>
+    <li><a href="http://ela.build/expense">Expense</a>, the best expense tracker on iOS.</li>
+    <li><a href="https://itunes.apple.com/app/fan-qie-tu-dou/id866339080">Pomotodo</a>, the best Pomodoro app on iOS.</li>
+    <li><a href="https://chrome.google.com/webstore/detail/halo-word-dictionary/bhkcehpnnlgncpnefpanachijmhikocj">Halo Word</a>, the best English → Chinese dictionary on Chrome.</li>
+    <li><a href="http://xhacker.im/cryptomeria">Cryptomeria</a>, a beautiful iOS app to help you learn Japanese kana with joy.</li>
+    <li><a href="http://teawhen.com/shoka">Shoka</a>: iOS book searching app for Zhejiang University library.</li>
+  </ul>
+  <h2>Battery Included</h2>
+    <p>Swift, Objective-C, Python, JavaScript</p>
+    <p>HTML, CSS</p>
+    <p>Sketch, InDesign, Illustrator</p>
+    <p>OS X, Ubuntu</p>
+    <p>Xcode, Sublime Text</p>
+  <h2>Backpack</h2>
+    <p><del>SE K310c</del>, <del>Palm Centro</del>, <del>Palm Trēo 650</del>, <del>Palm Pixi</del>, <del>HP Veer</del>, <del>iPhone 4S</del>, <del>iPhone 5s</del>, iPhone 6s Rose Gold</p>
+    <p><del>Kindle 3</del>, <del>iPod touch 4</del>, <del>iPad 3</del>, iPad mini 4</p>
+    <p>Panasonic GF1 + 20 mm pancake</p>
+    <p><del><abbr title="MacBook Air 13-inch">MBA 13</abbr></del>, <abbr title="MacBook Pro with Retina Display 15-inch">rMBP 15</abbr></p>
+    <p>Magic Trackpad, <del>Microsoft Sculpt Ergonomic Mouse</del>, <del>Razer Naga</del>, Razer Deathadder Chroma</p>
+  <h2>Heart</h2>
+    <p>I love CSvenja</p>
+  <h2 class="wtf"><abbr title="What the Font">WTF™</abbr></h2>
+    <p class="wtf">Source Sans Pro</p>
+</div>
 
-        <h3>Places</h3>
-        <p>Current: Vancouver, BC Canada</p>
-        <p>Past: Hangzhou</p>
+<footer>
 
-        <h3>Contact Me</h3>
-        <ul>
-          <li><a href="http://facebook.com/jnijeremy"> Facebook</a></li>
-          <li><a href="https://linkedin.com/in/jeremyni"> LinkedIn</a></li>
-          <li><a href="https://twitter.com/nizeyu"> Twitter</a></li>
-          <li><a href="https://www.instagram.com/jnijeremy"> Instagram</a></li>
-          <li><a href="https://github.com/jnijeremy"> GitHub</a></li>
-        </ul>
-      </section>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#robot-button").click(function() {
+    var clicked = $(this).attr("data-clicked");
+    if (clicked == 0) {
+      $(this).html("Please do not press this button again.");
+      $(this).attr("data-clicked", 1);
+    }
+    else {
+      $(this).hide();
+    }
+  });
+});
+</script>
+<script>!window.jQuery && document.write('<script src="/static/js/jquery-1.10.2.min.js"><\/script>')</script>
 
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-71812693-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&text=%C4%93%E2%84%A2' rel='stylesheet' type='text/css'>
 
-  </body>
+</footer>
+
+</body>
 </html>
