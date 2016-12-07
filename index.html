@@ -1,79 +1,71 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>I am Jnijeremy</title>
-  <meta name="viewport" content="user-scalable=no, width=device-width">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header>
-  <h1>Jnijeremy</h1>
-</header>
-<div role="main">
-  <h2>Who am I</h2>
-    <p>I am Jeremy Ni <span lang="zh-Hans">倪泽宇</span></p>
-    <p><a href="http://jnijeremy.com/blog" target="_blank">Blog</a>, <a href="Jeremy_Ni_Resume.pdf" target="_blank">Resume</a></p>
-    <p id="robot-button" class="wtf">Don't Press the Red Button</p>
-    <a><img id = "red-button" data-clicked="0" src="img/RedButton.png"/></a>
-
-  <h2>Router</h2>
-    <p>Vancouver · <abbr title="Simon Fraser University">SFU</abbr> · Hangzhou · <abbr title="Zhejiang University">ZJU</abbr></p>
-    <p><a href="https://github.com/jnijeremy" target="_blank">GitHub</a>, <a href="https://twitter.com/jnijeremy" target="_blank">Twitter</a>, <a href="https://facebook.com/jnijeremy" target="_blank">Facebook</a>, <a href="https://linkedin.com/in/jnijeremy" target="_blank">LinkedIn</a>, <a href="https://instagram.com/jnijeremy" target="_blank">Instagram</a></p>
-    <p><a href="mailto:nizeyu123@gmail.com">nizeyu123@gmail.com</a></p>
-  <h2>Battery Included</h2>
-    <p>C/C++, Python, JavaScript, Haskell</p>
-    <p>HTML, CSS, jQuery</p>
-    <p>Weka</p>
-    <p>OS X, Ubuntu</p>
-    <p>Sublime Text, Vim</p>
-  <h2>Backpack</h2>
-    <p><del>Samsung Note 2</del>, <del>iPhone 5S</del>, <del>Huawei P7</del>, iPhone 6</p>
-    <p><del>iPod touch 4</del>, <del>iPad 2</del>, <del>iPad Air 1</del>, Kindle Voyage</p>
-    <p><del>ThinkPad T500</del>, <abbr title="MacBook Pro with Retina Display 15-inch">rMBP 15</abbr></p>
-    <p><del>Hesh 2 Wireless</del>, <del>Air Raid</del>, <abbr title="Bose QuietComfort 25">QC 25</abbr></p>
-</div>
-
-<footer>
-
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script>
-$(document).ready(function() {
-  var robotButton = $("#robot-button");
-
-  $("#red-button").hover(function() {
-    robotButton.toggleClass("wtf");
-  });
-  $("#red-button").click(function() {
-    var clicked = $(this).attr("data-clicked");
-    if (clicked == 0) {
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>I am Jnijeremy</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jnijeremy</h1>
+    </header>
+    <div role="main">
+      <h2>Who am I</h2>
+      <p>I am Jeremy Ni <span lang="zh-Hans">倪泽宇</span></p>
+      <p><a href="http://jnijeremy.com/blog" target="_blank">Blog</a>, <a href="Jeremy_Ni_Resume.pdf" target="_blank">Resume</a></p>
+      <p id="robot-button" class="wtf">Don't Press the Red Button</p>
+      <a><img id = "red-button" data-clicked="0" src="img/RedButton.png"/></a>
+      <h2>Router</h2>
+      <p>Vancouver · <abbr title="Simon Fraser University">SFU</abbr> · Hangzhou · <abbr title="Zhejiang University">ZJU</abbr></p>
+      <p><a href="https://github.com/jnijeremy" target="_blank">GitHub</a>, <a href="https://twitter.com/jnijeremy" target="_blank">Twitter</a>, <a href="https://facebook.com/jnijeremy" target="_blank">Facebook</a>, <a href="https://linkedin.com/in/jnijeremy" target="_blank">LinkedIn</a>, <a href="https://instagram.com/jnijeremy" target="_blank">Instagram</a></p>
+      <p><a href="https://movie.douban.com/people/58048467/collect">Douban Movie List</a>, <a href="https://book.douban.com/people/58048467/collect">Reading List</a></p>
+      <p><a href="mailto:j@jnijeremy.com">j@jnijeremy.com</a></p>
+      <h2>Battery Included</h2>
+      <p>C/C++, Python, JavaScript, Haskell</p>
+      <p>HTML, CSS, jQuery</p>
+      <p>Weka</p>
+      <p>OS X, Ubuntu</p>
+      <p>Sublime Text, Vim</p>
+      <h2>Backpack</h2>
+      <p><del>Samsung Note 2</del>, <del>iPhone 5S</del>, <del>Huawei P7</del>, iPhone 6</p>
+      <p><del>iPod touch 4</del>, <del>iPad 2</del>, <del>iPad Air 1</del>, Kindle Voyage</p>
+      <p><del>ThinkPad T500</del>, <abbr title="MacBook Pro with Retina Display 15-inch">rMBP 15</abbr></p>
+      <p><del>Hesh 2 Wireless</del>, <del>Air Raid</del>, <abbr title="Bose QuietComfort 25">QC 25</abbr></p>
+    </div>
+    <footer>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script>
+      $(document).ready(function() {
+      var robotButton = $("#robot-button");
+      $("#red-button").hover(function() {
+      robotButton.toggleClass("wtf");
+      });
+      $("#red-button").click(function() {
+      var clicked = $(this).attr("data-clicked");
+      if (clicked == 0) {
       robotButton.html("Please don't press me again.");
       $(this).attr("data-clicked", 1);
-    }
-    else {
+      }
+      else {
       $(this).hide();
       robotButton.hide();
-    }
-  });
-});
-</script>
-<script>!window.jQuery && document.write('<script src="/static/js/jquery-1.10.2.min.js"><\/script>')</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71812693-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&text=%C4%93%E2%84%A2' rel='stylesheet' type='text/css'>
-
-</footer>
-
-</body>
+      }
+      });
+      });
+      </script>
+      <script>!window.jQuery && document.write('<script src="/static/js/jquery-1.10.2.min.js"><\/script>')</script>
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-71812693-1', 'auto');
+      ga('send', 'pageview');
+      </script>
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&text=%C4%93%E2%84%A2' rel='stylesheet' type='text/css'>
+    </footer>
+  </body>
 </html>
