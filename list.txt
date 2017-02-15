@@ -1,10 +1,12 @@
 TV:
-1. modern family s08e10
-2. fresh off the boat s03e08
-3. crown s01e10
-4. true humans s01e02
-5. 鬼吹灯 s01e15
-6. Sense8 s01e12, 2016 Christmas Special
+1. modern family s08e12
+2. fresh off the boat s03e12
+3. true humans s01e02
+
+TV (end):
+1. crown s01e10 (end)
+2. 鬼吹灯 s01e21 (end)
+3. Sense8 s01e12, 2016 Christmas Special (end)
 
 Book:
 javascript the good parts
@@ -20,4 +22,3 @@ https://jiffysteamer.com/steamers/jiffy-esteam-handheld-clothes-steamer.html
 3. suitcase
 4. hair dryer
 http://www.dysoncanada.ca/en-CA/haircare/supersonic.aspx
-5. toner
