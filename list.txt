@@ -1,7 +1,8 @@
 TV:
-1. modern family s08e12
-2. fresh off the boat s03e12
+1. modern family s08e14
+2. fresh off the boat s03e14
 3. true humans s01e02
+4. SNL s42e13，14
 
 TV (end):
 1. crown s01e10 (end)
