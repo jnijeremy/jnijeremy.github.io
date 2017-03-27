@@ -1,16 +1,3 @@
-TV:
-1. modern family s08e17
-2. fresh off the boat s03e17
-3. true humans s01e02
-4. SNL s42e13，14, 15
-5. the good fight s01e03
-6. the expanse s02e06
-
-TV (end):
-1. crown s01e10 (end)
-2. 鬼吹灯 s01e21 (end)
-3. Sense8 s01e12, 2016 Christmas Special (end)
-
 Book:
 javascript the good parts
 p40 2016-10-12
